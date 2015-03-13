@@ -1,0 +1,101 @@
+.aboutme .background
+{
+    background: radial-gradient(ellipse, black, black, black, #0033ff, black, black, black);
+    font-family: 'Lato';
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+}
+
+.aboutme .title
+{
+    font-size: 250px;
+
+    text-align: center;
+
+    color: #0099ff;
+    text-shadow:
+        2px 2px 0px #ff99ff,
+        -2px -2px 2px #0f6910,
+        2px -2px 2px #f097ef,
+        -2px 2px 2px #f097ef,
+        4px 4px 2px #0f6910;
+}
+
+.aboutme .subtitle
+{
+    font-size: 100px;
+    text-align: center;
+    text-shadow:
+        1px 1px 0px #ff76ff,
+        -1px 1px 0px #ff96ff,
+        1px -1px 0px #ff96ff,
+        -1px -1px 0px #ff96ff,
+        -1px -1px 2px #f097ef,
+        1px -2px 2px #f097ef,
+        -1px 1px 2px #f097ef,
+        2px 3px 2px #f097ef;
+}
+
+.aboutme .panel
+{
+	background: none;
+	box-shadow: none;
+}
+
+.aboutme #panBod
+{
+	border: 0 none;
+	/*background: none;*/
+	/*box-shadow: none;*/
+}
+
+.aboutme .lead
+{
+	text-align: center;
+    color: #39FF14;
+    font-size: 50px;
+    text-shadow:
+        -1px -1px 3px #0000ff,
+        1px -2px 3px #0000ff,
+        -1px 1px 3px #0000ff,
+        2px 3px 3px #0000ff;
+}
+
+.aboutme .side_pic
+{
+    text-align: center;
+}
+
+.aboutme .img-responsive
+{
+	display: inline;
+}
+
+.aboutme .botText
+{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    text-align: center;
+    font-size: 75%;
+    filter: invert(100%);
+}
+
+.aboutme .back
+{
+    padding: 0;
+    margin: 0;
+    bottom: 95%;
+    left: -2.5%;
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    z-index: 2;
+    font-size: 100%;
+    text-align: right;
+    filter: invert(100%);
+}

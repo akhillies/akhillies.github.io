@@ -1,0 +1,14 @@
+Akhil Batra
+
+COMPILED ON:
+	Runs on Mac OSX
+
+COMMANDS:
+-cn
+for if you want all the objects to be toon-ified
+
+-ns n
+for number of spheres, defaults to 1, so if you want 0, you must specify
+
+-nc n
+for number of cubes, defaults to 0

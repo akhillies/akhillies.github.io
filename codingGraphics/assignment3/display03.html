@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+        <meta content="utf-8" http-equiv="encoding"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/display03.css"/>
+
+        <title>Bezier Curves</title>
+    </head>
+    <body>
+    <div class="as3">
+        <div class="container-fluid everything">
+            <h1 class="bigTitle">Bezier Curves</h1>
+
+            <p class="lead summary">So this project is completely different from the others in that not only did I start from scratch, but I was learning a concept I had never touched before - at least not with the name Bezier Curves. By using Adobe Illustrator, I knew about curve representations as 4 control points, but what I never thought of was using 4 of those curves to represent a surface, which are otherwise known as Bezier Surfaces. This project was one of those things where you needed one simple, key understanding, and everything would fall into place (especially since this project was geared towards data structure side of graphics rather than graphics concepts themselves). I would have to say that this project was definitely easier than the Ray Tracer considering I did not have to directly deal with reflections and transformations (I used OpenGL this time). In the end, this project was probably the one I had the most fun with because of all the user interactions I added into the project. Finishing this project helped me realize that I want to get into modeling and character design for animations (still haven't decided between movies or video games). The <a href="README">README file</a> has all the features I implemented as well as the controls/commands for the program. To learn more about this project, you can email me at <a href="mailto:akhilbatra@berkeley.edu">akhilbatra@berkeley.edu</a></p>.
+            <br/>
+            <a href="#"><h2 class="perComs">Personal Comments/Feedback</h2></a>
+            <p class="lead coms">So this project started as being one of the harder ones - mainly because while I understood the theory and the applications of Bezier curves, I did not understand how they were used to physically represent the object and therefore how to make a program that took surfaces and made them into objects. However, because of a very good high school friend of mine who did understand Bezier surfaces, I got the one small, vital piece of information needed for me the understand how Bezier surfaces were coded and I quickly finished the project after that. From then I just worked on adding extra features - mainly focused on adding user interactions features like selecting of objects, moving individual objects as well as the whole scene, and even changing the type of display the object had (like wire frame, smooth or flat shading, etc.). Overall, I had the most fun with this project, nothing was frustrating at all, which kind of made me realize how much I like modeling and making poses or still scenes of objects and people.</p>
+            <br/><br/><br/>
+
+
+
+            <div class="carousel slide scenes" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target=".scenes" data-slide-to="0" class="active"></li>
+                    <li data-target=".scenes" data-slide-to="1"></li>
+                    <li data-target=".scenes" data-slide-to="2"></li>
+                    <li data-target=".scenes" data-slide-to="3"></li>
+                    <li data-target=".scenes" data-slide-to="4"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h3 class="slideTitle">Arches: Uniform and Adaptive</h3>
+                                <div class="col-xs-6">
+                                    <kbd class="center-block">
+                                        ./as3 <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/scenes/uniformArch.scene">uniformArch.scene</a>
+                                    </kbd>
+                                    <img class="img-responsive center-block picture" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/images/uniformFlatArches.png"/>
+                                </div>
+                                <div class="col-xs-6">
+                                    <kbd class="center-block">
+                                        ./as3 <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/scenes/adaptiveArch.scene">adaptiveArch.scene</a>
+                                    </kbd>
+                                    <img class="img-responsive center-block picture" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/images/adaptiveSmoothArches.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br/><br/><br/><br/><br/>
+
+                        <div class="carousel-caption">
+                            Simple arch demonstrating the various commands implemented into the program. Here is the original <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/inputFiles/arch.bez">BEZ</a> file.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h3 class="slideTitle">Teapots: Uniform and Adaptive</h3>
+                                <div class="col-xs-6">
+                                    <kbd class="center-block">
+                                        ./as3 <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/scenes/uniformTeapot.scene">uniformTeapot.scene</a>
+                                    </kbd>
+                                    <img class="img-responsive center-block picture" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/images/uniformSmoothTeapots.png"/>
+                                </div>
+                                <div class="col-xs-6">
+                                    <kbd class="center-block">
+                                        ./as3 <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/scenes/adaptiveTeapot.scene">adaptiveTeapot.scene</a>
+                                    </kbd>
+                                    <img class="img-responsive center-block picture" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/images/adaptiveFlatTeapots.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br/><br/><br/><br/><br/>
+
+                        <div class="carousel-caption">
+                            A little more complicated, a teapot that is also demonstrating the various commands implemented. Here is the original <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/inputFiles/teapot.bez">BEZ</a> file and the <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/outputFiles/teapot.obj">OBJ</a> generated by the program.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h3 class="slideTitle">OBJ Files: Cube and Diamond</h3>
+                                <div class="col-xs-6">
+                                    <kbd class="center-block">
+                                        ./as3 <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/inputFiles/cube.obj">cube.obj</a>
+                                    </kbd>
+                                    <img class="img-responsive center-block picture" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/images/cubeOBJ.png"/>
+                                </div>
+                                <div class="col-xs-6">
+                                    <kbd class="center-block">
+                                        ./as3 <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/inputFiles/diamond.obj">diamond.obj</a>
+                                    </kbd>
+                                    <img class="img-responsive center-block picture" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/images/diamondOBJ.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br/><br/><br/><br/><br/>
+
+                        <div class="carousel-caption">
+                            Just a couple simple polygons generated through OBJ files that the program takes in and automatically generates the images using Bezier curves.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <h3 class="slideTitle">OBJ Files: Air Boat and Mobster</h3>
+                                <div class="col-xs-6">
+                                    <kbd class="center-block">
+                                        ./as3 <a href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/inputFiles/airboat.obj">airboat.obj</a>
+                                    </kbd>
+                                    <img class="img-responsive center-block picture" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/images/airboatOBJ.png"/>
+                                </div>
+                                <div class="col-xs-6">
+                                    <kbd class="center-block">
+                                        ./as3 <a href="inputFiles/al.obj">al.obj</a>
+                                    </kbd>
+                                    <img class="img-responsive center-block picture" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/images/alOBJ.png"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br/><br/><br/><br/><br/>
+
+                        <div class="carousel-caption">
+                            Much more complicated 3D images generated from OBJ files.
+                        </div>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href=".scenes" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href=".scenes" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+
+
+
+            <h2 class="slideTitle">"Short" demonstration of everything the program can do (all the image transformations are controlled via keyboard and/or mouse clicks)</h2>
+            <video class="center-block videoUiWrapper vid" controls>
+                <source type="video/ogg" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/demo.ogv"/>
+            </video>
+        </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment3/display03.js"></script>
+    </body>
+</html>
