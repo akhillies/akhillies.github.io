@@ -46,7 +46,7 @@
 
 .aboutme .panBod
 {
-	border: 0 none;
+	border: none !important;
 	/*background: none;*/
 	/*box-shadow: none;*/
 }
