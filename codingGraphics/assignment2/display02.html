@@ -7,7 +7,13 @@
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" type="text/css" href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/display02.css"/>
+        <link rel="stylesheet" type="text/css" href="./assignment2/display02.css"/>
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js" defer></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" defer></script>
+        <script type="text/javascript" src="./assignment2/display02.js" defer></script>
 
         <title>Ray Tracer</title>
     </head>
@@ -48,58 +54,53 @@
                     Basic ray tracing with reflection of one depth and shadows. There are two directional lights in this image as well as diffuse, specular, and ambient shading for each object. Surprisingly enough, this was not the hardest part of the project.
                     <br/>
                     <a href="objFiles/stepOne.obj">This</a> is the file the program was run with.<br/>
-                     <img class="img-responsive center-block" type="png" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/outputImages/stepOne.png"/>
+                     <img class="img-responsive center-block" src="./assignment2/outputImages/stepOne.png" alt="First-step image could not load"/>
                 </div>
                 <div class="pic pic2">
                     This ray tracing has a reflection depth much greater than the last one and the reflection rays wither away each time it is reflected off an object - the rest works the same as the first milestone. This was the easiest part of the project to achieve.<br/>
                     <a href="objFiles/stepTwo.obj">This</a> is the file the program was run with<br/>
-                    <img class="img-responsive center-block" type="png" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/outputImages/stepTwo.png"/>
+                    <img class="img-responsive center-block" src="./assignment2/outputImages/stepTwo.png" alt="Second-step image could not load"/>
                 </div>
                 <div class="pic pic25">
                     This ray tracer image has transformations - including rotations, scaling, and translations - implemented along with everything else. This was by far the hardest part to finish and therefore the most rewarding. It also took forever to render.<br/>
                     <a href="objFiles/stepThree.obj">This</a> is the file the program was run with.<br/>
-                    <img class="img-responsive center-block" type="png" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/outputImages/stepTwoHalf.png"/>
+                    <img class="img-responsive center-block" src="./assignment2/outputImages/stepTwoHalf.png" alt="Second-to-third-step image could not load"/>
                 </div>
                 <div class="pic picMis">
                     <div class="container-fluid">
                         <div class="row">
                             Attempts with making the whole ray tracer work in object space rather than world space... pretty good, don't you think? If you put them together, it would look perfect!!! (or so my mind was thinking after the computer spent over 5 minutes rendering these images)
                             <div class="col-xs-6">
-                                <img class="img-responsive center-block" type="png" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/outputImages/stepThree-ish.png"/>
+                                <img class="img-responsive center-block" src="./assignment2/outputImages/stepThree-ish.png" alt="Third-step image could not load"/>
                             </div>
                             <div class="col-xs-6">
-                                <img class="img-responsive center-block" type="png" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/outputImages/out.png"/>
+                                <img class="img-responsive center-block" src="./assignment2/outputImages/out.png" alt="Image could not load"/>
                             </div>
                         </div>
                         <br/><br/><br/><br/><br/>
                         <div class="row">
                             Supposedly, these two images were made by the same problem... and the same fix (had to do with not having a max of 255 on the limit of pixel RGB values). But I am not exactly sure why they are different since it was the same code that generated both - it must have something to do with how FreeImage handles pixels with weird RGB values.
                             <div class="col-xs-6">
-                                <img class="img-responsive center-block" type="png" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/outputImages/z_noMax255.png"/>
+                                <img class="img-responsive center-block" src="./assignment2/outputImages/z_noMax255.png" alt="Failed attempt 1 could not load"/>
                             </div>
                             <div class="col-xs-6">
-                                <img class="img-responsive center-block" type="png" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/outputImages/z_noMax255again.png"/>
+                                <img class="img-responsive center-block" src="./assignment2/outputImages/z_noMax255again.png" alt="The failed attempt 2 image failed to load."/>
                             </div>
                         </div>
                         <br/><br/><br/>
                         <div class="row">
                             This one was just a "small" mistake with a quick fix: I did not normalize any of the vectors used for the diffuse constant and that plus FreeImage's weird way of dealing with RGB values not between 0 and 255 gave me this... Looks like a contour map though doesn't it? I thought for a moment that I would try to go somewhere with this but in the end I did not have the time.
-                            <img class="img-responsive center-block" type="png" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/outputImages/z_noNormalingDiffConst.png"/>
+                            <img class="img-responsive center-block" src="./assignment2/outputImages/z_noNormalingDiffConst.png" alt="Failure image that failed to load"/>
                         </div>
                         <br/><br/><br/>
                         <div class="row">
                             So this might just looks like a halo (which is really awesome on its own) but this was done with only specular shading. That was super surprising for me since it got a pretty good shading that has a kind of shadow all around it just making it look that much more supernatural.
-                            <img class="img-responsive center-block" type="png" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/outputImages/z_specScrewup.png"/>
+                            <img class="img-responsive center-block" src="./assignment2/outputImages/z_specScrewup.png" alt="Here is an image that did to load"/>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         </div>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment2/display02.js"></script>
     </body>
 </html>
