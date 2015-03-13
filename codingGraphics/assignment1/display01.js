@@ -1,3 +1,29 @@
+$.fn.imageDisAppear = function()
+{
+    return this.each(function()
+    {
+        $(this).slideDown(500)
+            .animate(
+            {
+                opacity: 1 - $(this).css("opacity")
+            }, 500, function()
+            {
+                if ($(this).css("opacity") == 0)
+                {
+                    $(this).slideUp();
+                }
+            });
+    });
+}
+
+$.fn.shadowToggle = function()
+{
+    return this.each(function()
+    {
+        $(this).css("boxShadow", "0px " + (-3 - $(this).css("boxShadow").split("px ")[1]) + "px 2px 1px " + ["#252525", "black"][$(this).css("boxShadow").split("px ")[1] % 2]);
+    });
+}
+
 $(document).ready(function()
 {
     $(".as1 .personal").click(function(e)
@@ -112,29 +138,3 @@ $(document).ready(function()
         $(this).shadowToggle();
     });
 });
-
-$.fn.imageDisAppear = function()
-{
-    return this.each(function()
-    {
-        $(this).slideDown(500)
-            .animate(
-            {
-                opacity: 1 - $(this).css("opacity")
-            }, 500, function()
-            {
-                if ($(this).css("opacity") == 0)
-                {
-                    $(this).slideUp();
-                }
-            });
-    });
-}
-
-$.fn.shadowToggle = function()
-{
-    return this.each(function()
-    {
-        $(this).css("boxShadow", "0px " + (-3 - $(this).css("boxShadow").split("px ")[1]) + "px 2px 1px " + ["#252525", "black"][$(this).css("boxShadow").split("px ")[1] % 2]);
-    });
-}
