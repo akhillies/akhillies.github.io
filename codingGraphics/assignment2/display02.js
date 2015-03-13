@@ -1,3 +1,22 @@
+$.fn.fadeSelfIn = function()
+{
+    return this.each(function()
+    {
+        $(".as2 .titleChoice").fadeOut(1000, function()
+        {
+            $(".as2 .titleChoice").text("Click here to choose another milestone")
+                .fadeIn(1000)
+                .css("cursor", "pointer");
+        });
+        var pic = this;
+        $(".as2 .choices").fadeOut(1000, function()
+        {
+            $(pic).fadeIn(1000);
+        });
+    });
+}
+
+
 $(document).ready(function()
 {
     $(".as2 .commentTitle").click(function()
@@ -38,21 +57,3 @@ $(document).ready(function()
         }
     });
 });
-
-$.fn.fadeSelfIn = function()
-{
-    return this.each(function()
-    {
-        $(".as2 .titleChoice").fadeOut(1000, function()
-        {
-            $(".as2 .titleChoice").text("Click here to choose another milestone")
-                .fadeIn(1000)
-                .css("cursor", "pointer");
-        });
-        var pic = this;
-        $(".as2 .choices").fadeOut(1000, function()
-        {
-            $(pic).fadeIn(1000);
-        });
-    });
-}
