@@ -1,6 +1,4 @@
-$(document).ready(function(){
-    $('.background').load(document.URL +  ' .background');
-});
+$(document).ready(function(){});
 
 $(window).load(function()
 {
