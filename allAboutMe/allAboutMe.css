@@ -3,7 +3,7 @@
     background: radial-gradient(ellipse, black, black, black, #0033ff, black, black, black);
     font-family: 'Lato';
     position: absolute;
-    width: 100%;
+    top: 0px;
     bottom: 0px;
 }
 
