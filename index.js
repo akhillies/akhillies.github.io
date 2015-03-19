@@ -43,20 +43,7 @@ $(window).load(function()
     $(".homepage .workList").css("margin-top", $(".homepage .titleBtn").css("height"));
 });
 
-function loadPage(pgname)
-{
-    var css = document.createElement("link");
-    css.setAttribute("rel", "stylesheet");
-    css.setAttribute("type", "text/css");
-    css.setAttribute("href", "./" + pgname + ".css");
-
-    var scpt = document.createElement('script');
-    scpt.setAttribute("type","text/javascript");
-    scpt.setAttribute("src", "./" + pgname + ".js");
-}
-
 $( document ).on( "pagecreate", ".aboutme", function()
         {
-            //location.reload();
-            loadPage("allAboutMe");
+            location.reload();
         });
