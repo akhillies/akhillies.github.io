@@ -43,6 +43,6 @@ $(window).load(function()
     $(".homepage .workList").css("margin-top", $(".homepage .titleBtn").css("height"));
 });
 
-$( document ).on( "pageinit", ".aboutPage", function( event ) {
+$( document ).on( "pageinit", ".aboutme", function( event ) {
   alert( "This page was just enhanced by jQuery Mobile!" );
 });
