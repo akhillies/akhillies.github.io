@@ -43,7 +43,7 @@ $(window).load(function()
     $(".homepage .workList").css("margin-top", $(".homepage .titleBtn").css("height"));
 });
 
-$( document ).on( "pagecreate", ".aboutme", function()
+$(document).on("pagecreate", ".aboutme", function()
         {
             location.reload();
         });
