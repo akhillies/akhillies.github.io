@@ -104,7 +104,7 @@
 
 .homepage .bgImage
 {
-    background: url('resources/logo.png');
+    background: url('./resources/logo.png');
     background-size: contain;
     background-repeat: repeat;
     background-position: left;
