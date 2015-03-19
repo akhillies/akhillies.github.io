@@ -1,4 +1,4 @@
-$(document).on("pageinit","#pageinit2", function()
+$(document).on("pageinit",".aboutme", function()
 {
     $(".homepage .aboutBtn").click(function()
     {
