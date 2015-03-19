@@ -1,10 +1,4 @@
-$(document).ready(function()
-{
-    $(".introduction").on("shown.bs.collapse", function()
-    {
-        // $(".selfPic").height($(".intro").height());
-    });
-});
+$(document).ready(function(){});
 
 $(window).load(function()
 {

@@ -11,9 +11,7 @@
 .aboutme .title
 {
     font-size: 500%;
-
     text-align: center;
-
     color: #0099ff;
     text-shadow:
         2px 2px 0px #ff99ff,
@@ -47,8 +45,6 @@
 .aboutme .panBod
 {
 	border: none !important;
-	/*background: none;*/
-	/*box-shadow: none;*/
 }
 
 .aboutme .lead
