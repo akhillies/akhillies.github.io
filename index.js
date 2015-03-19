@@ -57,5 +57,6 @@ function loadPage(pgname)
 
 $( document ).on( "pagecreate", ".aboutme", function()
         {
-            loadPage("allAboutMe");
+            location.reload();
+            //loadPage("allAboutMe");
         });
