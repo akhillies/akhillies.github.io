@@ -10,7 +10,6 @@ $(document).ready(function()
     });
 });
 
-
 $(window).load(function()
 {
     $(".homepage .myName").slideDown(1500);
@@ -42,4 +41,8 @@ $(window).load(function()
         },
         1500);
     $(".homepage .workList").css("margin-top", $(".homepage .titleBtn").css("height"));
+});
+
+$( document ).on( "pageinit", ".aboutPage", function( event ) {
+  alert( "This page was just enhanced by jQuery Mobile!" );
 });
