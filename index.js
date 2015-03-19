@@ -46,9 +46,9 @@ $(window).load(function()
 function loadPage(pgname)
 {
     var css = document.createElement("link");
-    fileref.setAttribute("rel", "stylesheet");
-    fileref.setAttribute("type", "text/css");
-    fileref.setAttribute("href", "./" + pgname + ".css");
+    css.setAttribute("rel", "stylesheet");
+    css.setAttribute("type", "text/css");
+    css.setAttribute("href", "./" + pgname + ".css");
 
     var scpt = document.createElement('script');
     scpt.setAttribute("type","text/javascript");
@@ -57,6 +57,6 @@ function loadPage(pgname)
 
 $( document ).on( "pagecreate", ".aboutme", function()
         {
-            location.reload();
-            //loadPage("allAboutMe");
+            //location.reload();
+            loadPage("allAboutMe");
         });
