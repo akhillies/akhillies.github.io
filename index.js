@@ -47,3 +47,9 @@ $(document).on("pagecreate", ".aboutme", function()
         {
             location.reload();
         });
+
+
+$(document).on("pagecreate", ".codinggraphics", function()
+        {
+            location.reload();
+        });
