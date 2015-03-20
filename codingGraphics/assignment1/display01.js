@@ -24,7 +24,6 @@ $(document).ready(function()
                     }, 500);
             });
             $(".as1 .picTitle").css("boxShadow", "0px -4px 2px 1px black");
-            $(".as1 .legendList").show();
         }
         else
         {
