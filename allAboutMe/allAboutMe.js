@@ -1,3 +1,11 @@
+$(document).ready(function()
+        {
+            $(".back").click(function()
+                {
+                    $(".aboutme").fadeOut();
+                });
+        });
+
 $(window).load(function()
 {
     $(".aboutme").fadeIn();
