@@ -24,6 +24,7 @@ $(document).ready(function()
                     }, 500);
             });
             $(".as1 .picTitle").css("boxShadow", "0px -4px 2px 1px black");
+            console.log(Math.max($(".as1 .sspl").find("img").height(), $(".as1 .ssdl").find("img").height()) - $(".as1 .legend").height())
             $(".as1 .legendList").height(Math.max($(".as1 .sspl").find("img").height(), $(".as1 .ssdl").find("img").height()) - $(".as1 .legend").height());
         }
         else
