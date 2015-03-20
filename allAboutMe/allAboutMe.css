@@ -77,6 +77,8 @@
     text-align: center;
     font-size: 75%;
     filter: invert(100%);
+    text-shadow: none;
+    color: #666699;
 }
 
 .aboutme .back
@@ -84,12 +86,18 @@
     padding: 0;
     margin: 0;
     bottom: 95%;
-    left: -2.5%;
+    left: 0.5%;
+    top: 0.5%;
     width: 100%;
     height: 5%;
     position: absolute;
     z-index: 2;
     font-size: 100%;
-    text-align: right;
-    filter: invert(100%);
+    text-align: left;
+    text-shadow: none;
+}
+
+.aboutme .back a
+{
+    color: #445577 !important;
 }
