@@ -16,5 +16,7 @@ $(document).ready(function()
             width: "100%",
             height: "100%"
         });
+
+        $(".as0").height("100%");
     });
 });
