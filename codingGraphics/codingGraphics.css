@@ -87,7 +87,7 @@
 
 .codinggraphics .modal_closer
 {
-    background: none;
+    background: black;
     color: gray;
     opacity: .5;
     width: 25px;
@@ -99,7 +99,7 @@
     border-radius: 50%;
     padding: 0px;
     margin: 0px;
-    right: 0%;
-    top: 0%;
+    right: 25px;
+    top: 25px;
     z-index: 10;
 }
