@@ -44,9 +44,9 @@ $(document).ready(function()
     {
         if ($(".as2 .titleChoice").text() == "Click here to choose another milestone")
         {
-            $(".as2 .titleChoice").fadeOut(1000, function()
+            $(".as2 .pic").fadeOut(1000, function()
             {
-                $(".as2 .pic").fadeOut(1000, function()
+                $(".as2 .titleChoice").fadeOut(1000, function()
                 {
                     $(".as2 .titleChoice").text("Pick one of the following milestones I had in this project:")
                         .css("cursor", "")
