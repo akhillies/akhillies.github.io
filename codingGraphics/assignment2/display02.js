@@ -44,10 +44,15 @@ $(document).ready(function()
     {
         if ($(".as2 .titleChoice").text() == "Click here to choose another milestone")
         {
-            $(".as2 .pic, .as2 .titleChoice").fadeOut(1000, function()
+            $(".as2 .titleChoice").fadeOut(1000, function()
             {
-                $(".as2 .titleChoice, .as2 .choices").fadeIn(1000);
-                $(".as2 .titleChoice").text("Pick one of the following milestones I had in this project:").css("cursor", "");
+                $(".as2 .titleChoice").text("Pick one of the following milestones I had in this project:")
+                    .fadeIn(1000)
+                    .css("cursor", "");
+            });
+            $(".as2 .pic").fadeOut(1000, function()
+            {
+                $(".as2 .choices").fadeIn(1500);
             });
         }
     });
