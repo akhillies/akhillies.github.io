@@ -52,7 +52,7 @@ $(document).ready(function()
             });
             $(".as2 .pic").fadeOut(1000, function()
             {
-                $(".as2 .choices").fadeIn(1000);
+                $(".as2 .choices").fadeIn(1500);
             });
         }
     });
