@@ -50,7 +50,7 @@ $(document).ready(function()
                     .css("cursor", "")
                     .fadeIn(1000);
             });
-            $(".as2 .pic").fadeOut(1000, function()
+            $(".as2 .pic").fadeOut(1500, function()
             {
                 $(".as2 .choices").fadeIn(1500);
             });
