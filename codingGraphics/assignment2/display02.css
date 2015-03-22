@@ -57,7 +57,7 @@
                 #ff6f00 0em 1px 0px;
 }
 
-.as2 .pic1, .as2 .pic2, .as2 .pic25, .as2 .picMis
+.as2 .pic
 {
     display: none;
     text-align: center;
@@ -68,7 +68,7 @@
     padding-right: 5em;
 }
 
-.as2 .step1, .as2 .step2, .as2 .step25, .as2 .screwups
+.as2 .buttonChoice
 {
     background-color: #770000;
     color: #008300;
@@ -79,6 +79,4 @@
         2px -2px 0px #000000,
         -2px 2px 0px #000000,
         2px 2px 0px #000000;
-    width: 100%;
-    height: 100%;
 }
