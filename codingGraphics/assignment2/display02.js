@@ -46,13 +46,16 @@ $(document).ready(function()
         {
             $(".as2 .titleChoice").fadeOut(1000, function()
             {
-                $(".as2 .titleChoice").text("Pick one of the following milestones I had in this project:")
-                    .fadeIn(1000)
-                    .css("cursor", "");
                 $(".as2 .pic").fadeOut(1000, function()
                 {
-                    $(".as2 .choices").fadeIn(1500);
-                });
+                    $(".as2 .titleChoice").text("Pick one of the following milestones I had in this project:")
+                        .css("cursor", "")
+                        .fadeIn(1000, function()
+                        {
+                            $(".as2 .choices").fadeIn(1500);
+                        });
+
+                });        
             });
         }
     });
