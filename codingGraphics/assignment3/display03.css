@@ -86,6 +86,9 @@
 }
 
 .as3 .picture
+{}
+
+.as3 .vid
 {
-    object-fit: fill;
+    width: 75%;
 }
