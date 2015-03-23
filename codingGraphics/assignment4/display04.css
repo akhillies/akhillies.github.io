@@ -9,6 +9,11 @@
     opacity: 1;
 }
 
+.as4
+{
+    background: url:("./media/bkgd.png");
+}
+
 .as4 .overallTitle
 {
     text-align: center;
