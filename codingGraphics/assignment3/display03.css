@@ -85,11 +85,6 @@
     text-shadow: black -0.1em -0.1em 0.2em;
 }
 
-.as3 .picture
-{
-    width: 90%;
-}
-
 .as3 .leftside
 {
     text-align: right;
@@ -97,5 +92,5 @@
 
 .as3 .vid
 {
-    width: 66%;
+    width: 50%;
 }
