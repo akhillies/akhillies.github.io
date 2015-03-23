@@ -1,13 +1,7 @@
-.as4 .bakgrd img
-{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
 .as4 .container-fluid
 {
     background: url("./media/bkgd.png");
+    width: 100%;
 }
 
 .as4 .overallTitle
