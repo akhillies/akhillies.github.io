@@ -28,7 +28,7 @@
 
 .as0 .bkgd
 {
-    background: url("media/screenShot.png");
+    background: url("./media/screenShot.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
