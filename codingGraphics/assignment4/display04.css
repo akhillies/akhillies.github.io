@@ -1,9 +1,5 @@
-.as4 .bakgrd
+.as4 .bakgrd img
 {
-    background: url("./assignment4/media/bkgd.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     width: 100%;
     height: 100%;
     position: absolute;
