@@ -5,7 +5,7 @@ $(document).ready(function()
         $(".as3 .coms").slideToggle(1000);
     });
 
-    setSizes();
+    //setSizes();
 
 });
 
