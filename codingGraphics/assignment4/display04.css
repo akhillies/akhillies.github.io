@@ -1,6 +1,7 @@
 .as4 .container-fluid
 {
     background: url("./media/bkgd.png");
+    background-position: center center;
     width: 100%;
 }
 
