@@ -1,6 +1,6 @@
 .as4 .bakgrd
 {
-    background: url("bkgd.png");
+    background: url("./media/bkgd.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -5,33 +5,27 @@
         <meta content="utf-8" http-equiv="encoding"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css"/>
-        <link rel="stylesheet" type="text/css" href="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment4/display04.css"/>
+        <link rel="stylesheet" type="text/css" href="./assignment4/display04.css"/>
 
         <title>Inverse Kinematics</title>
+        
+        <script type="text/javascript" src="./assignment4/display04.js" defer></script>
     </head>
     <body>
     <div class="as4">
         <div class="bakgrd center-block"></div>
         <div class="container-fluid row col-xs-12">
         <h1 class="overallTitle">Inverse Kinematics Solver</h1>
-        <p class="lead introSum">After doing all the shading and Bezier curves, I thought it was time to work with something I had not really worked with before: animation. In this project, I did not have to worry about shading or anything to do with appearance, but more behind the scenes things - namely the math that goes into an inverse Kinematics (IK) solver. For this project, I spent very little time dealing with the appearance of everything and more time with the controls (adding arms, controlling goal points, rotating the camera) and then how the program would find all the necessary information needed to reach the goal. For once, the hardest part of this project was not coding it, but rather understanding why the math worked the way it did and then writing the proofs on your own. The IK solver was probably the one project where I  spent more time researching and trying to learn than actually coding itself. This was an excellent gateway for me to get into modeling and character design because it taught me about how things move in the real world and how any software that I use will calculate those movements. The <a href="README">README file</a> contains all the features I added into the program. You can email me any questions at <a href="mailto:akhilbatra@berkeley.edu"> akhilbatra@berkeley.edu</a>.</p>
+        <p class="lead introSum">After doing all the shading and Bezier curves, I thought it was time to work with something I had not really worked with before: animation. In this project, I did not have to worry about shading or anything to do with appearance, but more behind the scenes things - namely the math that goes into an inverse Kinematics (IK) solver. For this project, I spent very little time dealing with the appearance of everything and more time with the controls (adding arms, controlling goal points, rotating the camera) and then how the program would find all the necessary information needed to reach the goal. For once, the hardest part of this project was not coding it, but rather understanding why the math worked the way it did and then writing the proofs on your own. The IK solver was probably the one project where I  spent more time researching and trying to learn than actually coding itself. This was an excellent gateway for me to get into modeling and character design because it taught me about how things move in the real world and how any software that I use will calculate those movements. The <a href="./readme.html" target="_blank">README file</a> contains all the features I added into the program. You can email me any questions at <a href="mailto:akhilbatra@berkeley.edu"> akhilbatra@berkeley.edu</a>.</p>
         <br/><br/>
         <a href="#"><h2 class="perTitle">Personal Comments/Response</h2></a>
         <p class="lead perComs">So while coding this project, I had 3 main phases: starting to understand so I code the simple/basic things, realizing I understood nothing so I add random features everywhere, and finally actually understanding everything enough to code the whole project while adding in a few extra features along the way. This project is one that not every person needs to know - even if they are doing animation. IK solving is done by the program itself (AutoDesk Maya or Blender) therefore making the user not need to worry about the math behind it. However, when I went back to animating with AutoDesk Maya after learning the math behind IK, I realized I could make the animations much more smoother and a lot of the fundamentals that I took for granted before now make sense to me. I plan my next coding project to be concentrated on having a more user interaction based idea - probably along the lines of having the user add 3D shapes into a scene and give each shape a type of joint (also user-inputted) to work with my IK solver. This should be able to eventually become something like a very simple character model and rigging program.</p>
         <br/><br/><br/>
         <video class="container center-block videoUiWrapper vid" controls>
-            <source type="video/ogg" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment4/animations/final.ogv"></source>
+            <source type="video/mp4" src="./assignment4/media/final.mp4"></source>
+            <source type="video/ogg" src="./assignment4/media/final.ogv"></source>
         </video><br/>
         </div>
         </div>
-
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://ocf.berkeley.edu/akhilb/codingGraphics/assignment4/display04.js"></script>
     </body>
 </html>

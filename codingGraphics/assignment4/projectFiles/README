@@ -1,0 +1,74 @@
+Akhil Batra
+
+COMPILED ON:
+	Runs on Mac OSX
+
+WHERE EVERYTHING IS:
+	Main function is in ass4.cpp
+	Source code is in src/
+	input files of each path are in inputFiles/
+	images created by program are in images/
+	videos created with the program are in animations/
+
+FEATURES:
+	Has an IK solver that works for any number of ball joints of any length
+	can take input from both files and mouse
+	Comes with a lot of other extra things just to make the whole thing look that much better (look at IN PROGRAM COMMANDS for more info)
+
+RESOURCES:
+	OpenGL Documentation (and Library)
+	Eigen Documentation (and Library)
+
+COMMAND INPUT:
+	./as4 <FILE NAME> [optional flags]
+	optional flags = 
+		-j n -> add n joints pre-made by me (max of 16) into the system (default takes joints from the input file)
+		-e n -> set the error to be n (default is .1)
+
+INPUT FILE:
+	2 commands: ‘v x y z’ and ’j l’
+		if the line starts with ‘v’, then it must be followed by 3 floats representing the goal point. The vertices must be placed in order - the arm will follow the points in order
+		if the line starts with ‘j’, then 1 or 4 floats must follow, representing the length of the joint
+
+IN PROGRAM COMMANDS:
+	Mouse Control = press and hold down the left mouse button on the screen to drag the goal around (it will follow the mouse pointer)
+	‘a’ = add another joint
+	‘e’ = erase the paths covered so far (restart the path that is being drawn)
+	‘f’ = un/freeze the animation
+	‘i’ = enable/disable user input (must be in form of ‘x y z’ and can input multiple points at once
+	‘g’ = draw/don’t draw the goal point
+	‘j’ = draw/don’t draw the joints
+	‘l’ = draw the path that the goal points are taking
+	‘p’ = draw the path the joints are taking
+	‘r’ = reset all the world rotations, translating, and scaling
+	’t’ = make the joints’ path a trail instead of path (meaning as the path leaves the joints, they become more and more transparent, eventually becoming invisible)
+	Arrow Keys = rotate the selected object (which will be highlighted) or the whole world if no objects selected
+	Shift + Arrow Keys = translate selected object or world if none selected
+	‘+/=‘ = scales the selected object to be bigger (or world if no object selected)
+	‘-/_’ = scales the selected object to be smaller (or world if no object selected)
+	SPACE = quit program
+
+VIDEO SCRIPT:
+	make
+	
+	1)
+	./as4 IKpaths.in -j 4
+		— draw goal path				(command: l)
+		— do translating, scaling, and rotating 	(commands: arrow keys, shift + arrow keys, +/-)
+		— show / hide the trail				(command: t)
+		— reset transformations 			(command: r)
+		— erase path					(command: e)
+		— add a new joint in the middle of the program 	(command: a)
+
+	2)
+	./as4 test.in
+		— do manual input entering 			(command: i)
+		— move around with mouse pressed		(command: mouse click + drag)
+
+	3)
+	./as4 IKtightCircle.in -j 1
+		— show / hide the goal and path			(command: g, p)
+	./as4 IKcomplex.in -j 8
+		— freeze then unfreeze the screen		(command: f)
+	./as4 IKcomplexCenter.in -e .01 -j 16
+		— show / hide the joints			(command: j)
