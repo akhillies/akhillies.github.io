@@ -4,12 +4,9 @@ $(document).ready(function()
     {
         $(".as3 .coms").slideToggle(1000);
     });
-
-    //setSizes();
-
 });
 
-function setSizes()
+/*function setSizes()
 {
     if (document.elementFromPoint(0, 0))
     {
@@ -22,4 +19,4 @@ function setSizes()
         return;
     }
     setTimeout(setSizes, 100);
-}
+}*/
