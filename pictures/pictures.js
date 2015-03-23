@@ -1,2 +1,5 @@
-$(document).ready(function(){
-});
+$(document).on("pagecreate", ".homepage", function()
+        {
+            location.reload();
+        });
+
