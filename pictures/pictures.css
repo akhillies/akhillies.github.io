@@ -15,7 +15,10 @@
     width: 100%;
 }
 
-.ui-page-theme-a, .ui-overlay-a { background:none; }
+.pictures
+{
+    background:none;
+}
 
 .pictures .bigtitle
 {
