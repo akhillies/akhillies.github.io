@@ -1,8 +1,7 @@
 .as3 .everything
 {
     background: radial-gradient(circle, blue, blue, black, green, black);
-    /*margin-top: -2em;
-    padding-bottom: 2em;*/
+    padding-bottom: 2em;
 }
 
 .as3 .bigTitle
