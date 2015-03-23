@@ -24,3 +24,8 @@ $(window).load(function()
 {
     $(".codinggraphics").fadeIn();
 });
+
+$(document).on("pagecreate", ".home", function()
+        {
+            location.reload();
+        });
