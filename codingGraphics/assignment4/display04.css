@@ -1,8 +1,3 @@
-.asdf
-{
-    height: 100%;
-}
-
 .as4 .bakgrd
 {
     background: url("./media/bkgd.png");
@@ -50,4 +45,9 @@
     display: none;
     color: #00c5ff;
     text-shadow: 0px 0px 1em #15ff00;
+}
+
+.as4 .vid
+{
+    width: 75%;
 }
