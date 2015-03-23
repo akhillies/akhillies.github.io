@@ -53,3 +53,8 @@ $(document).on("pagecreate", ".codinggraphics", function()
         {
             location.reload();
         });
+
+$(document).on("pagecreate", ".pictures", function()
+        {
+            location.reload();
+        });
