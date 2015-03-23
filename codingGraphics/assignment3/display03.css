@@ -86,7 +86,9 @@
 }
 
 .as3 .picture
-{}
+{
+    width: 100%;
+}
 
 .as3 .vid
 {
