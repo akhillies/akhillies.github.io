@@ -1,3 +1,8 @@
+.pictures
+{
+    background:none;
+}
+
 .pictures .bkgd
 {
     z-index: -1;
@@ -12,12 +17,7 @@
 
 .pictures .bkgd img
 {
-    width: 100%;
-}
-
-.pictures
-{
-    background:none;
+    height: 100%;
 }
 
 .pictures .bigtitle
@@ -123,6 +123,36 @@
                 -1px -1px 1px #000000;
     color: #00CE55;
     border: none;
+}
+
+.pictures #emblem video
+{
+    width: 67%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pictures #emblem img
+{
+    width: 67%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pictures #emblem .row
+{
+    display: table;
+    width: 100%;
+}
+
+.pictures #emblem .row div
+{
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
 
 .pictures .botText
