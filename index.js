@@ -45,16 +45,16 @@ $(window).load(function()
 
 $(document).on("pagecreate", ".aboutme", function()
         {
-            location.reload();
+            // location.reload();
         });
 
 
 $(document).on("pagecreate", ".codinggraphics", function()
         {
-            location.reload();
+            // location.reload();
         });
 
 $(document).on("pagecreate", ".pictures", function()
         {
-            location.reload();
+            // location.reload();
         });
