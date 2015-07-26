@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en_US">
+    <head>
+
+        <!-- Meta-Information -->
+        <title>Akhil Batra's Portfolio</title>
+        <link rel="shortcut icon" href="images/icon.png">
+
+        <!-- Vendor: Stylesheets -->
+        <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css"  href="https://fonts.googleapis.com/css?family=Lato:300"/>
+
+        <!-- Vendor: Javascripts -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/angular/angular.min.js" defer></script>
+        <script src="lib/angular/angular-route.min.js" defer></script>
+        <script src="js/page.js" defer></script>
+    </head>
+    <body ng-app="akbatra">
+
+        <div ng-include='"templates/header.html"'></div>
+        <div ng-view></div>
+        <div ng-include='"templates/footer.html"'></div>
+
+    </body>
+</html>
