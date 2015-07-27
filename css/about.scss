@@ -1,0 +1,70 @@
+.portfolio
+{
+    background: radial-gradient(ellipse, black, black, black, #0033ff, black, black, black);
+}
+
+.aboutme
+{
+    padding-top: 10px;
+    
+    .title
+    {
+        font-size: 500%;
+        text-align: center;
+        color: #0099ff;
+        text-shadow:
+            2px 2px 0px #ff99ff,
+            -2px -2px 2px #0f6910,
+            2px -2px 2px #f097ef,
+            -2px 2px 2px #f097ef,
+            4px 4px 2px #0f6910;
+    }
+
+    .panel
+    {
+        background: none;
+        box-shadow: none;
+
+        .subtitle
+        {
+            font-size: 300%;
+            text-align: center;
+            text-shadow:
+                1px 1px 0px #6676ff,
+                -1px 1px 0px #6696ff,
+                1px -1px 0px #6696ff,
+                -1px -1px 0px #6696ff,
+                -1px -1px 2px #9097ef,
+                1px -2px 2px #9097ef,
+                -1px 1px 2px #9097ef,
+                2px 3px 2px #9097ef;
+        }
+
+        .panBod
+        {
+            border: none !important;
+
+            .lead
+            {
+                text-align: center;
+                color: #39FF14;
+                font-size: 150%;
+                text-shadow:
+                    -1px -1px 3px #0000ff,
+                    1px -2px 3px #0000ff,
+                    -1px 1px 3px #0000ff,
+                    2px 3px 3px #0000ff;
+            }
+        }
+        
+        .side_pic
+        {
+            text-align: center;
+        }
+
+        .img-responsive
+        {
+            display: inline;
+        }
+    }
+}
