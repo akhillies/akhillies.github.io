@@ -1,5 +1,5 @@
 $(document).ready( function() {
-        $('.imagery a[data-toggle="tab"]').on("hide.bs.tab", function(event) {
+        $('.imagery a[data-toggle="tab"]').on("show.bs.tab", function(event) {
             console.log('#' + event.target);
             if(history.pushState)
             {
