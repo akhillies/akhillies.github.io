@@ -38,6 +38,9 @@ app.controller('codingCtrl', function ($scope) {
 app.controller('imageryCtrl', function ($scope, $routeParams) {
         $scope.pageClass = "imageryPage";
         $('.imagery a[data-target="#' + $routeParams.tabid + '"]').click();
+        $scope.isActive = function (tab) { 
+            return tab === $routeParams.tabid;
+        };
     });
 
 app.controller('errorCtrl', function ($scope) {

@@ -13,32 +13,32 @@
             <h1 class="bigtitle"><strong>Images: Drawn and Edited</strong></h1>
             <div class="tab" role="tabpanel">
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="tabselector active">
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('home')}">
                         <a data-target="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
                     </li>
-                    <li role="presentation" class="tabselector">
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('emblem')}">
                         <a data-target="#emblem" aria-controls="emblem" role="tab" data-toggle="tab">Emblem</a>
                     </li>
-                    <li role="presentation" class="tabselector">
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('icon')}">
                         <a data-target="#icon" aria-controls="icon" role="tab" data-toggle="tab">Icon</a>
                     </li>
-                    <li role="presentation" class="tabselector">
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('blades')}">
                         <a data-target="#blades" aria-controls="blades" role="tab" data-toggle="tab">Blades</a>
                     </li>
-                    <li role="presentation" class="tabselector">
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('other')}">
                         <a data-target="#other" aria-controls="other" role="tab" data-toggle="tab">Other</a>
                     </li>
                 </ul>
 
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+                    <div role="tabpanel" class="tab-pane fade in" id="home" ng-class="{ active: isActive('home')}">
                         <h2 class="tabbody_title">Starting you off</h2>
                         <div class="tabbody_info">
                             <p>This page contains some of the images I have created over the years ("years" meaning about 3 since I don't have anything from before that). They were all either drawn with Adobe Illustrator or edited with Adobe Photoshop. Obviously, each image had a different process before being deemed presentable, but all had a similar list of events (though the order did vary sometimes).<p>
                             <p>I first got into the whole drawing thing when I was bored in class when waiting for the professor or GSI to start and I did not want to pull out my phone (or I did not have it, aka pre-11th grade). I would just doodle random things, mainly dragon heads and serpent bodies sometimes with arms, legs, and even wings. The whole fantasy thing was where my mind always drifted because it was where the impossible was - everything in reality almost always appeared better when shown in real life so there would be no point in expressing it in another way (unless of course there was some non-realistic factor, though honestly, with modern 3D graphics and CGI, everything may look better when shown in live-action and I may have to rethink my previous statement...).</p>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="emblem">
+                    <div role="tabpanel" class="tab-pane fade" id="emblem" ng-class="{ active: isActive('emblem')}">
                         <br/>
                         <div class="container-fluid">
                             <div class="row">
@@ -78,9 +78,9 @@
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="icon">.c.</div>
-                    <div role="tabpanel" class="tab-pane fade" id="blades">.d.</div>
-                    <div role="tabpanel" class="tab-pane fade" id="other">.e.</div>
+                    <div role="tabpanel" class="tab-pane fade" id="icon" ng-class="{ active: isActive('icon')}">.c.</div>
+                    <div role="tabpanel" class="tab-pane fade" id="blades" ng-class="{ active: isActive('blades')}">.d.</div>
+                    <div role="tabpanel" class="tab-pane fade" id="other" ng-class="{ active: isActive('other')}">.e.</div>
                 </div>
             </div>
         </div>
