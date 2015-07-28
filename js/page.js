@@ -38,7 +38,7 @@ app.controller('codingCtrl', function ($scope) {
 app.controller('imageryCtrl', function ($scope, $routeParams) {
         $scope.pageClass = "imageryPage";
         console.log($routeParams);
-        $('.imageryPage a[data-target="#' + $routeParams.tabid + '"]').click();
+        $('.imagery a[data-target="#' + $routeParams.tabid + '"]').click();
     });
 
 app.controller('errorCtrl', function ($scope) {
