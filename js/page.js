@@ -11,7 +11,7 @@ app.config(['$routeProvider', function ($routeProvider) {
             .when("/about", {templateUrl: "html/about.html", controller: "aboutCtrl"})
             .when("/coding", {templateUrl: "html/coding.html", controller: "codingCtrl"})
             .when("/imagery", {templateUrl: "html/imagery.html", controller: "imageryCtrl"})
-            .when("/imagery/{tabid}", {templateUrl: "html/imagery.html", controller: "imageryCtrl"})
+            .when("/imagery/:tabid", {templateUrl: "html/imagery.html", controller: "imageryCtrl"})
             .when("/404", {templateUrl: "html/error.html", controller: "errorCtrl"})
             .otherwise({redirectTo: '/404'});
     }]);
@@ -35,9 +35,9 @@ app.controller('codingCtrl', function ($scope) {
         $scope.pageClass = "codingPage";
     });
 
-app.controller('imageryCtrl', function ($scope, $stateParams) {
+app.controller('imageryCtrl', function ($scope, $routeParams) {
         $scope.pageClass = "imageryPage";
-        console.log($stateParams);
+        console.log($routeParams);
     });
 
 app.controller('errorCtrl', function ($scope) {
