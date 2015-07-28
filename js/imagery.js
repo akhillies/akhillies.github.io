@@ -1,13 +1,13 @@
 $(document).ready( function() {
-        $('.imagery a[data-toggle="tab"]').on("show.bs.tab", function(event) {
-            console.log('#' + event.target);
+        $('.imagery a[data-toggle="tab"]').on("hidden.bs.tab", function(event) {
+            console.log('#' + event.relatedTarget);
             if(history.pushState)
             {
-                history.pushState(null, null, location.hash + '/' + event.target);
+                history.pushState(null, null, '#imagery/' + event.relatedTarget.dataset.target.substring(1));
             }
             else
             {
-                location.hash += '/' + event.target;
+                location.hash = '#imagery/' + event.target;
             }
         });
     });
