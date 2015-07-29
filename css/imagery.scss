@@ -54,7 +54,7 @@
             width: 20%;
             text-align: center;
             font-family: 'Lato';
-            border-bottom: 4px ridge #009944;
+            border-top: 4px ridge #009944;
 
             a
             {
@@ -70,7 +70,7 @@
                     opacity: .75;
                     border-color: green;
                     color: #00CC09;
-                    border-radius: 55% 55% 0% 0%;
+                    border-radius: 0% 0% 55% 55%;
                     border: ridge green;
                 }
             }
@@ -81,12 +81,12 @@
         {
             opacity: .6;
             background: black;
-            border-radius: 55% 55% 0% 0%;
+            border-radius: 0% 0% 55% 55%;
             color: #00CC09;
             text-shadow: 1px 1px 1px #0000FF,
                         -1px -1px 1px #0000FF;
             border: groove green;
-            border-bottom: 1px solid black;
+            border-top: 1px solid black;
         }
 
         li.active a, .tabselector a:focus
