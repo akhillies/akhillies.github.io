@@ -37,5 +37,7 @@
         background: none !important;
         box-shadow: 0px 0px 25px 0px #464646 inset,
                     0px 0px 25px 0px #000000;
+        pointer-events: none;
+        cursor: default;
     }
 }
