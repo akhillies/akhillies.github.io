@@ -23,7 +23,7 @@ app.controller('homeCtrl', function ($scope /*, $location, $http */) {
 
 app.controller('navbarCtrl', function ($scope, $location) { 
         $scope.isActive = function (viewLocation) { 
-            return viewLocation === $location.path();
+            return $location.path().startsWith(viewLocation);
         };
     });
 
