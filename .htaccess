@@ -1,1 +1,2 @@
-redirect %{REQUEST_URI} %{HTTP_HOST}/#/%{REQUEST_URI}
+RewriteEngine On
+RewriteRule ^(.*)$ /#/$1 [L]
