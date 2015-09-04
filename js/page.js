@@ -15,7 +15,6 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             .when("/404", {templateUrl: "html/error.html", controller: "errorCtrl"})
             .otherwise({redirectTo: '/404'});
 
-        $locationProvider.html5Mode(true);
     }]);
 
 
