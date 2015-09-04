@@ -16,8 +16,7 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
             .otherwise({redirectTo: '/404'});
 
         $locationProvider.html5Mode({
-            enabled: true,
-            requireBase: false
+            enabled: true
         });
     }]);
 
