@@ -1,0 +1,1 @@
+redirect %{REQUEST_URI} %{HTTP_HOST}/#/%{REQUEST_URI}
