@@ -5,7 +5,7 @@ var app = angular.module('akbatra',
         ]);
 
 
-app.config(['$routeProvider', function ($routeProvider) {
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         $routeProvider
             .when("/", {templateUrl: "html/home.html", controller: "homeCtrl"})
             .when("/about", {templateUrl: "html/about.html", controller: "aboutCtrl"})
@@ -14,6 +14,8 @@ app.config(['$routeProvider', function ($routeProvider) {
             .when("/imagery/:tabid", {templateUrl: "html/imagery.html", controller: "imageryCtrl"})
             .when("/404", {templateUrl: "html/error.html", controller: "errorCtrl"})
             .otherwise({redirectTo: '/404'});
+
+        $locationProvider.html5Mode(true);
     }]);
 
 
