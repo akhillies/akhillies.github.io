@@ -1,25 +1,25 @@
 .portfolio
 {
-    background: radial-gradient(#778877, #337755, #336633, #335511, #113311, #092909);
+    background: radial-gradient(#668877, #337755, #336633, #335511, #113311, #092909);
 }
 
 .imagery
 {
+    color: #CCFFDD;
+    text-shadow: 1px 1px 5px black;
+
     .bigtitle
     {
         padding-top: 75px;
         padding-bottom: 25px;
         font-size: 65pt;
-        color: #7FFF00;
+        color: #40BF50;
         text-align: center;
         text-shadow: 1px 1px 0px #005555,
-                    -1px 1px 0px #009999,
-                    1px -1px 0px #009999,
-                    -1px -1px 0px #009999,
-                    2px 2px 3px #00CD55,
-                    -2px 2px 3px #00CD55,
-                    2px -2px 3px #00CD55,
-                    -2px -2px 3px #00CD55;
+                    3px 3px 2px #007D55,
+                    -1px 3px 2px #007D55,
+                    1px -1px 2px #007D55,
+                    -2px -1px 2px #007D55;
     }
 
     .tabeverything
@@ -38,6 +38,7 @@
     {
         position: fixed;
         width: 100%;
+        min-width: 1000px;
         z-index: 1;
         
         .tabselector
@@ -50,7 +51,7 @@
             a
             {
                 background: #002209;
-                color: #00CC09;
+                color: #00FF09;
                 text-shadow: 1px 1px 1px #0000FF,
                             -1px -1px 1px #0000FF;
                 font-size: 150%;
@@ -61,7 +62,6 @@
                 {
                     background: #222222;
                     opacity: .85;
-                    color: #00CC09;
                     border: ridge green;
                 }
             }
@@ -73,7 +73,6 @@
             opacity: 0.9;
             background: black;
             border-radius: 0% 0% 55% 55%;
-            color: #00CC09;
             text-shadow: 1px 1px 1px #0000FF,
                         -1px -1px 1px #0000FF;
             border: groove green;
@@ -83,13 +82,13 @@
             {
                 background: none;
                 border: ridge transparent;
-                color: #00CC09;
                 text-shadow: 1px 1px 1px #0000FF,
                             -1px -1px 1px #0000FF;
                 
                 &:hover
                 {
                     background: none;
+                    color: #00FF09;
                     opacity: 1;
                     border: ridge black;
                 }
@@ -97,11 +96,17 @@
         }
     }
 
+    .tab-content
+    {
+        max-width: 1200px;
+        margin: auto;
+    }
+
     .tabbody_title
     {
         text-align: center;
         font-size: 375%;
-        color: #00FF99;
+        color: #99FF99;
         text-decoration: underline;
         text-shadow: -1px 1px 1px #321321,
                     1px -1px 1px #123123,
@@ -115,19 +120,18 @@
         padding: 0 10% 5% 5%;
         font-size: 200%;
         text-shadow: -1px 1px 2px #559955,
-                    1px -1px 2px #00DF00,
+                    1px 1px 2px #009000,
                     1px 1px 1px #000000,
-                    1px -1px 1px #000000,
                     -1px 1px 1px #000000,
-                    -1px -1px 1px #000000;
-        color: #00CE55;
+                    1px -1px 1px #000000;
+        color: #55FFBB;
         border: none;
     }
 
-    .lead
+    .titleRow
     {
-        color: #CCDDFF;
-        text-shadow: 1px 1px 5px black;
+        color: #CCCC99;
+        text-shadow: 1px 1px 5px #044094;
     }
 
     #emblem
@@ -166,6 +170,7 @@
     #icon
     {
         text-align: center;
+        padding: 0 30px;
 
         img
         {
