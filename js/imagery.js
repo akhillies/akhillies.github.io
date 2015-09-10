@@ -1,6 +1,6 @@
 $(document).ready( function() {
         $('.imagery a[data-toggle="tab"]').on("hide.bs.tab", function(event) {
-            if(history.pushState)
+            if(history.replaceState)
             {
                 history.replaceState(null, null, '#/imagery/' + event.relatedTarget.dataset.target.substring(1));
                 console.log('#imagery/' + event.relatedTarget.dataset.target.substring(1));
