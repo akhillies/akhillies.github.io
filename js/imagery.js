@@ -6,7 +6,7 @@ $(document).ready( function() {
             // }
             // else
             // {
-                location.hash = '/#/imagery/' + event.target;
+                // location.hash = '/#/imagery/' + event.target;
             // }
         });
     });
