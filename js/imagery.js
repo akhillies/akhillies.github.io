@@ -8,7 +8,7 @@ $(document).ready( function() {
             else
             {
                 location.hash = '#/imagery/' + event.target;
-                console.log('#/imagery/' + event.target);
+                console.log(event.target);
             }
         });
     });
