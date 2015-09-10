@@ -2,27 +2,25 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" type="text/css" href="css/imagery.css"/>
-        
-        <script src="js/imagery.js" defer></script>
     </head>
     <body>
         <div class="imagery" data-role="page">
             <div class="tab" role="tabpanel">
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="tabselector" ng-class="{ active: isActive('home')}">
-                        <a href="#imagery/home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+                        <a data-target="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
                     </li>
                     <li role="presentation" class="tabselector" ng-class="{ active: isActive('emblem')}">
-                        <a href="#imagery/emblem" aria-controls="emblem" role="tab" data-toggle="tab">First: The Emblem</a>
+                        <a data-target="#emblem" aria-controls="emblem" role="tab" data-toggle="tab">First: The Emblem</a>
                     </li>
                     <li role="presentation" class="tabselector" ng-class="{ active: isActive('icon')}">
-                        <a href="#imagery/icon" aria-controls="icon" role="tab" data-toggle="tab">Second: Icon/Logo</a>
+                        <a data-target="#icon" aria-controls="icon" role="tab" data-toggle="tab">Second: Icon/Logo</a>
                     </li>
                     <li role="presentation" class="tabselector" ng-class="{ active: isActive('blades')}">
                         <a data-target="#blades" aria-controls="blades" role="tab" data-toggle="tab">Next: The Blades</a>
                     </li>
                     <li role="presentation" class="tabselector" ng-class="{ active: isActive('other')}">
-                        <a href="#imagery/other" aria-controls="other" role="tab" data-toggle="tab">Then: The Rest</a>
+                        <a data-target="#other" aria-controls="other" role="tab" data-toggle="tab">Then: The Rest</a>
                     </li>
                 </ul>
 
