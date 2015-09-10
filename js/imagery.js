@@ -3,7 +3,7 @@ $(document).ready( function() {
             if(history.pushState)
             {
                 history.pushState(null, null, '#/imagery/' + event.relatedTarget.dataset.target.substring(1));
-                console.log('#/imagery/' + event.relatedTarget.dataset.target.substring(1));
+                console.log('imagery/' + event.relatedTarget.dataset.target.substring(1));
             }
             else
             {
