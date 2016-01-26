@@ -1,6 +1,6 @@
 .portfolio
 {
-    background: radial-gradient(ellipse, black, black, black, #0033ff, black, black, black);
+    background: radial-gradient(ellipse, #DFEFFF, #CAEDFF, #C9DDFF, #A8DBFD);
 }
 
 .aboutme
@@ -13,58 +13,76 @@
         text-align: center;
         color: #0099ff;
         text-shadow:
-            2px 2px 0px #ff99ff,
-            -2px -2px 2px #0f6910,
-            2px -2px 2px #f097ef,
-            -2px 2px 2px #f097ef,
-            4px 4px 2px #0f6910;
+            -2px -2px 2px #0f6996,
+            4px 4px 2px #0f6996,
+            1px 1px 0px #FFFFFF,
+            -1px 1px 0px #FFFFFF,
+            1px -1px 0px #FFFFFF,
+            -1px -1px 0px #FFFFFF;
     }
 
-    .panel
+    .panel-group
     {
-        background: none;
-        box-shadow: none;
-
-        .subtitle
+        margin-top: 25px;
+        
+        .panel
         {
-            font-size: 300%;
-            text-align: center;
-            text-shadow:
-                1px 1px 0px #6676ff,
-                -1px 1px 0px #6696ff,
-                1px -1px 0px #6696ff,
-                -1px -1px 0px #6696ff,
-                -1px -1px 2px #9097ef,
-                1px -2px 2px #9097ef,
-                -1px 1px 2px #9097ef,
-                2px 3px 2px #9097ef;
-        }
+            background: none;
+            box-shadow: none;
+            margin: 25px 0px;
 
-        .panBod
-        {
-            border: none !important;
+            .subtitle
+            {
+                color: #9FBFAF;
+                font-size: 25pt;
+                text-align: center;
+                text-shadow:
+                    1px 1px 0px #6676ff,
+                    -1px 1px 0px #6696ff,
+                    1px -1px 0px #6696ff,
+                    -1px -1px 0px #6696ff,
+                    -1px -1px 2px #90d7ef,
+                    1px -2px 2px #90d7ef,
+                    -1px 1px 2px #90d7ef,
+                    2px 3px 2px #90d7ef;
 
-            .lead
+                a {
+                    text-decoration: none;
+
+                    &:hover
+                    {
+                        border-bottom: 3px ridge #9FBFFF;
+                        border-radius: 10%;
+                    }
+                }
+            }
+
+            .panBod
+            {
+                border: none !important;
+
+                .lead
+                {
+                    text-align: center;
+                    color: #407090;
+                    font-size: 18pt;
+                    text-shadow:
+                        0px 0px 1px #000050,
+                        1px -1px 1px #AFCFDF,
+                        -1px 1px 1px #AFCFDF,
+                        2px 0px 3px #CCEEFF;
+                }
+            }
+            
+            .side_pic
             {
                 text-align: center;
-                color: #39FF14;
-                font-size: 150%;
-                text-shadow:
-                    -1px -1px 3px #0000ff,
-                    1px -2px 3px #0000ff,
-                    -1px 1px 3px #0000ff,
-                    2px 3px 3px #0000ff;
             }
-        }
-        
-        .side_pic
-        {
-            text-align: center;
-        }
 
-        .img-responsive
-        {
-            display: inline;
+            .img-responsive
+            {
+                display: inline;
+            }
         }
     }
 }
