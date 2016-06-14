@@ -38,12 +38,13 @@
     .nav
     {
         position: fixed;
-        width: 100%;
+        width: 99%;
+        margin: 0 .65%;
         z-index: 1;
         
         .tabselector
         {
-            width: 20%;
+            width: 16.66%;
             text-align: center;
             padding: 0;
             z-index: 5;
