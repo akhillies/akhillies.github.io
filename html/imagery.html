@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/imagery.css"/>
+        
+        <script src="js/imagery.js" defer></script>
+    </head>
+    <body>
+        <div class="imagery" data-role="page">
+            <div class="tab" role="tabpanel">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('home')}">
+                        <a data-target="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a>
+                    </li>
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('emblem')}">
+                        <a data-target="#emblem" aria-controls="emblem" role="tab" data-toggle="tab">First: The Emblem</a>
+                    </li>
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('icon')}">
+                        <a data-target="#icon" aria-controls="icon" role="tab" data-toggle="tab">Second: Icon/Logo</a>
+                    </li>
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('blades')}">
+                        <a data-target="#blades" aria-controls="blades" role="tab" data-toggle="tab">Next: The Blades</a>
+                    </li>
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('other')}">
+                        <a data-target="#other" aria-controls="other" role="tab" data-toggle="tab">Then: The Rest</a>
+                    </li>
+                    <li role="presentation" class="tabselector" ng-class="{ active: isActive('images')}">
+                        <a data-target="#images" aria-controls="images" role="tab" data-toggle="tab">Just Images</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <h1 class="bigtitle">Images: Drawn and Edited</h1>
+                    <div role="tabpanel" class="tab-pane fade" id="home" ng-class="{ 'in active': isActive('home')}">
+                        <h2 class="titleRow">Starting you off</h2>
+                        <div class="tabbody_info">
+                            <p>This page contains some of the images I have created over the years ("years" meaning about 3 since I don't have anything from before that). They were all either drawn with Adobe Illustrator or edited with Adobe Photoshop. Obviously, each image had a different process before being deemed presentable, but all had a similar list of events (though the order did vary sometimes).<p>
+                            <p>I first got into the whole drawing thing when I was bored in class when waiting for the professor or GSI to start and I did not want to pull out my phone (or I did not have it, aka pre-11th grade). I would just doodle random things, mainly dragon heads and serpent bodies sometimes with arms, legs, and even wings. The whole fantasy thing was where my mind always drifted because it was where the impossible was - everything in reality almost always appeared better when shown in real life so there would be no point in expressing it in another way (unless of course there was some non-realistic factor, though honestly, with modern 3D graphics and CGI, everything may look better when shown in live-action and I may have to rethink my previous statement...).</p>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="emblem" ng-class="{ 'in active': isActive('emblem')}">
+                        <br/>
+                        <div class="container-fluid">
+                            <div class="row titleRow">
+                                <div class="col-xs-3 col-xs-offset-1"><h2>Quick Info</h2></div>
+                                <div class="col-xs-3 col-xs-offset-1"><h2>Process</h2></div>
+                                <div class="col-xs-3"><h2>Result</h2></div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="col-xs-3 col-xs-offset-1">
+                                    <p class="lead">Influenced by an Italian friend who actually has an official family crest, I decided to design on that I think would be cool for me to have attached to my own name :D. It is still a work-in-progress, but here is the process I have gone through so far to create it.</p>
+                                </div>
+                                <div class="col-xs-3 col-xs-offset-1">
+                                    <video class="videoUiWrapper vid" preload="auto" muted autoplay loop>
+                            <source type="video/mp4" src="media/emblem/emblem.mp4"/>
+                            Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="col-xs-3">
+                                    <img src="media/emblem/round2.png" alt="Image could not be loaded"/>
+                                </div>
+                            </div>
+                            <br/><br/>
+                            <div class="row">
+                                <div class="col-xs-3 col-xs-offset-1">
+                                    <p class="lead">The cross blades are inspired from the video game Kingdom Hearts by Square Enix, I just had really liked the idea of crossed blades and used them as placeholders but now I feel like they do not fit the rest of the theme I have going.</p>
+                                </div>
+                                <div class="col-xs-3">
+                            <video class="videoUiWrapper vid" preload="auto" muted autoplay loop>
+                                <source type="video/mp4" src="media/emblem/emblem2.mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
+                                </div>
+                                <div class="col-xs-3">
+                                    <img src="media/emblem/round3.png" alt="Image could not be loaded"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="icon" ng-class="{ 'in active': isActive('icon')}">
+                        <div class="container-fluid">
+                            <div class="row titleRow">
+                                <h2>And the big one...</h2>
+                            </div>
+                            <div class="row col-xs-10 col-xs-offset-1">
+                                <p class="lead">So this is the one I've spent the most time on, so if you don't like it, I don't care, and keep your comments to yourself. I love it, which is all that matters to me, and I will probably end up using it everywhere I can for the rest of my life as my mark.</p>
+                                <p class="lead">Now that I got that out of my system, let me go a little into how it came about: stuff I love. The first thing is I love mythological creatures, and above all, dragons. So here is the first one:<br/><br/><img src="media/logo/brandish2.png" alt="Image not loaded" align="left"/>First of all, yes, of course, I had to add my name to it &#9786. The dragons here act as posts, giving a sort of guardian look with my name in the center. My imagination is always going all over the place, something needs to hold it down right? It does not end here, the colors are actually pulled from my school colors (hey I have some school pride!) and just because I really enjoyed playing with that combination of colors. I applied my study in colors and color interaction to make the yellow and blue (which are complementary colors) look good together. Then from here, I worked on moving towards the next thing I knew I wanted to include - cross blades.<br/><br/><br/><img src="media/logo/logo.png" alt="Image didn't load" align="right"/><br/>Now this part was done a lot on my own, with the main inspiration coming from different swords. The handle is a saber handle - taking inspiration from the large hand guard that goes around the knuckles as well. There is a hook around the opposite end of the handle to allow space for the thumb to grip.<br/>The blade is both simple and complicated if that makes any sense... Simple in the sense that the end goal was simple: I wanted the handle and the blade to be in perfect sync with each other, allowing an overlap of the handle and blade to look natural. Now the complicated part was actually designing it because it is quite easy to make that end goal work, but to make it look good and unique, that's complicated. You can see the result right here (and many other places on my website), just remember, I don't care if you judge :P<br/><br/><img src="media/logo/brand.jpg" alt="Image did not load" align="left"/>Now this, this is the final result of all my work being put into one final brand image I made for myself. This is the compilation of everything you have seen so far on this page. Hopefully, you can see all the pieces that went into this image - the guardian dragons are pretty obvious, the crossblades seen above. Another thing I tried with this picture was play with the 3D effects of one picture being in front and behind another image (the dragons' tail for this image).</p>
+                                TO BE CONTINUED...
+                            </div>
+                        </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="blades" ng-class="{ 'in active': isActive('blades')}"><h1>TODO blades - excuse the blank page, but come back for more later!!</h1></div>
+                    <div role="tabpanel" class="tab-pane fade" id="other" ng-class="{ 'in active': isActive('other')}"><h1>TODO miscellaneous - excuse the blank page, but come back for more later!!!</h1></div>
+                    <div role="tabpanel" class="tab-pane fade" id="images" ng-class="{ 'in active': isActive('images')}">
+                        <h1>TODO just the images - excuse the page, but come back for more later!!!</h1>
+                        <img src="media/emblem/round2.png" alt="Image could not be loaded"/>
+                        <img src="media/emblem/round3.png" alt="Image could not be loaded"/>
+                        <img src="media/logo/brandish2.png" alt="Image not loaded"/>
+                        <img src="media/logo/logo.png" alt="Image didn't load"/>
+                        <img src="media/logo/brand.jpg" alt="Image did not load"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

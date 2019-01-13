@@ -1,0 +1,64 @@
+* {
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.portfolio
+{
+    min-width: 760px;
+    height:100%;
+    overflow: auto;
+
+    .page
+    {
+        margin-top: 0px;
+        font-family: 'Lato';
+        z-index:-1;
+        min-height:100%;
+        padding-bottom: 100px;
+    }
+
+    .ng-enter
+    {
+        z-index: 8888;
+        position:relative;
+        animation: scaleUp 1s both ease-in-out;
+    }
+    
+    .ng-leave
+    {
+        z-index: 9999;
+        position:absolute;
+        transform-origin: 0% 0%;
+        animation: scaleDown 1s both ease-in-out;
+    }
+
+    @keyframes scaleDown
+    {
+       
+        to 
+        {
+            opacity: 0.3;
+            -webkit-transform: scale(0.5, 0.5);
+            -moz-transform: scale(0.5, 0.5);
+            -o-transform: scale(0.5, 0.5);
+            transform: scale(0.5, 0.5);
+
+        }
+ 
+    }
+
+    @keyframes scaleUp
+    {
+        from
+        {
+            opacity: 0.3;
+            -webkit-transform: scale(0.8, 0.8);
+            -moz-transform: scale(0.8, 0.8);
+            -o-transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
+        }
+    }
+}
